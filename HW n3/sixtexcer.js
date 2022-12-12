@@ -1,25 +1,22 @@
 //Sixt Excercise BONUS oF BONUS
 
-function dogAge(humanYears) {
-    let calcAge = humanYears * 7;
-    console.log(`Your dog's age is ${calcAge} years`);
-    return calcAge;
+
+
+function calcAges(humanAge, dogAge){
+    if(humanAge > 0){
+    let dogYears = humanAge * 7;
+    console.log(`Your human has ${dogYears} dog years!`)
+    }
+
+
+else if(dogAge > 0){
+    let humanYears = dogAge / 7;
+    console.log(`Your dog has ${humanYears} human years!`)
+}
+else{
+    console.log("Wrong calculation");
+}
 }
 
-//dog to human years
-
-function humanAge(dogYears) {
-    let calcAge = dogYears / 7;
-    console.log(`Your human age is ${calcAge} years`);
-    return calcAge;
-}
-dogAge(15);
-humanAge(35);
-
-/*
-Bonus of bonus**: Try to use the same function for both calculations.
- Hint: make the logic dependent on another argument.
-
-dvete kalkulacii vo ista funkcija ne uspeav da gi stavam :( 
-    ako moze nekoj hint pomos za da ja resam */
-
+calcAges(0 , 10);
+calcAges(10 ,0);

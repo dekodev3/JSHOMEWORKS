@@ -1,22 +1,24 @@
 //Sixt Excercise BONUS oF BONUS
+function dogAge(humanYears) {
+    let calcAge = humanYears * 7;
+    return calcAge;
+}
 
+//dog to human years
 
+function humanAge(dogYears) {
+    let calcAge = dogYears / 7;
+    return calcAge;
+}
 
-function calcAges(humanAge, dogAge){
-    if(humanAge > 0){
-    let dogYears = humanAge * 7;
-    console.log(`Your human has ${dogYears} dog years!`)
-    }
-
-
-else if(dogAge > 0){
-    let humanYears = dogAge / 7;
-    console.log(`Your dog has ${humanYears} human years!`)
+let userChoice = prompt("Enter 'D' for dog years, and 'H' for human years");
+let userInput = parseInt(prompt("Enter the years"));
+if(userChoice === "D"){
+    console.log(`dog years ${dogAge(userInput)} dog years`);
+}
+else if(userChoice === "H"){
+    console.log(`Your dog has ${humanAge(userInput)} human years`)
 }
 else{
-    console.log("Wrong calculation");
+    console.log('Wrong calculation');
 }
-}
-
-calcAges(0 , 10);
-calcAges(10 ,0);

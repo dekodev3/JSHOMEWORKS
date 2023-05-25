@@ -1,0 +1,53 @@
+let codingBtn = document.querySelector("#coding");
+let marketingBtn = document.querySelector("#marketing");
+let designBtn = document.querySelector("#design");
+
+
+
+function showCoding() {
+    var x = document.getElementById('coding-container');
+    var y = document.getElementById('marketing-container');
+    var z = document.getElementById('design-container');
+
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+    y.style.display = 'none';
+    z.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+    y.style.display = 'none';
+    z.style.display = 'none';
+  }
+}
+
+function showMarketing() {
+    var x = document.getElementById('coding-container');
+    var y = document.getElementById('marketing-container');
+    var z = document.getElementById('design-container');
+    document.getElementById('marketing-container');
+    if (y.style.display === 'none') {
+      y.style.display = 'block';
+      x.style.display = 'none';
+      z.style.display = 'none';
+    } else {
+      x.style.display = 'none';
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+function showDesign() {
+    var x = document.getElementById('coding-container');
+    var y = document.getElementById('marketing-container');
+    var z = document.getElementById('design-container');
+    document.getElementById('design-container');
+    if (z.style.display === 'none') {
+      z.style.display = 'block';
+      x.style.display = 'none';
+      y.style.display = 'none';
+    } else {
+        x.style.display = 'none';
+        z.style.display = 'block';
+        y.style.display = 'none';
+    }
+  }
